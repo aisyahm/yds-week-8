@@ -17,7 +17,11 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UsersTableSeeder::class,
             ColorsTableSeeder::class,
-            ListsTableSeeder::class
+            ListsTableSeeder::class,
+            TasksTableSeeder::class,
+            SubtaskTableSeeder::class,
+            CategoriesTableSeeder::class,
+            TaskCategoriesTableSeeder::class
         ]);
     }
 }

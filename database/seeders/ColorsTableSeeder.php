@@ -14,7 +14,7 @@ class ColorsTableSeeder extends Seeder
      */
     public function run()
     {
-        $colors = ['Merah', 'Biru', 'Kuning', 'Hijau'];
+        $colors = ['#000000', '#0000FF', '#FF8C00', '#FF1493'];
 
         foreach ($colors as $colors) {
             Colors::create([

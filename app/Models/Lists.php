@@ -12,18 +12,22 @@ class Lists extends Model
     protected $fillable = [
         'color_id',
         'user_id',
-        // 'task_id',
         'name',
         'password',
     ];
 
     public function users()
     {
-        return $this->belongsTo(Users::class);
+        return $this->belongsTo(User::class);
     }
 
     public function colors()
     {
         return $this->hasOne(Colors::class);
+    }
+
+    public function tasks()
+    {
+        return $this->hasMany(Tasks::class);
     }
 }
