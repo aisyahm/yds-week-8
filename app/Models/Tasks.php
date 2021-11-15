@@ -33,7 +33,7 @@ class Tasks extends Model
 
     public function subtasks()
     {
-        return $this->hasOne(Subtasks::class);
+        return $this->hasMany(Subtasks::class);
     }
     
     public function taskCategories()
