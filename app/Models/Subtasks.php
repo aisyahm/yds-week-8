@@ -15,8 +15,8 @@ class Subtasks extends Model
         'is_complete',
     ];
 
-    public function lists()
+    public function tasks()
     {
-        return $this->belongsTo(Lists::class);
+        return $this->belongsTo(Tasks::class);
     }
 }
