@@ -17,7 +17,7 @@ class CreateListsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('color_id');
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('task_id');
+            // $table->unsignedBigInteger('task_id');
             $table->string('name');
             $table->string('password');
             $table->timestamps();
