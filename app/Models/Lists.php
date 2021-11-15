@@ -23,7 +23,7 @@ class Lists extends Model
 
     public function colors()
     {
-        return $this->hasOne(Colors::class);
+        return $this->belongsTo(Colors::class);
     }
 
     public function tasks()

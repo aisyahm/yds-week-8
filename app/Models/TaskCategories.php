@@ -14,13 +14,13 @@ class TaskCategories extends Model
         'category_id'
     ];
 
-    // public function tasks()
-    // {
-    //     return $this->belongsTo(Tasks::class);
-    // }
+    public function tasks()
+    {
+        return $this->belongsTo(Tasks::class);
+    }
 
-    // public function categories()
-    // {
-    //     return $this->belongsTo(Categories::class);
-    // }
+    public function categories()
+    {
+        return $this->belongsTo(Categories::class);
+    }
 }

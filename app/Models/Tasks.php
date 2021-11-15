@@ -31,13 +31,13 @@ class Tasks extends Model
         return $this->belongsTo(Lists::class);
     }
 
-    // public function subtasks()
-    // {
-    //     return $this->hasOne(Subtasks::class);
-    // }
+    public function subtasks()
+    {
+        return $this->hasOne(Subtasks::class);
+    }
     
-    // public function taskCategories()
-    // {
-    //     return $this->hasMany(TaskCategories::class);
-    // }
+    public function taskCategories()
+    {
+        return $this->hasMany(TaskCategories::class);
+    }
 }
